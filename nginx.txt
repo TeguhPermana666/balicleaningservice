@@ -1,0 +1,50 @@
+# === KLIEN D (Aleksa Bali Cleaning Service) ===
+server {
+    listen 80;
+    server_name balicleaningservice.com www.balicleaningservice.com;
+
+    location /.well-known/acme-challenge/ {
+        root /var/www/certbot;
+    }
+
+    location / {
+        return 301 https://balicleaningservice.com$request_uri;
+    }
+}
+
+server {
+    listen 443 ssl;
+    server_name balicleaningservice.com www.balicleaningservice.com;
+
+    ssl_certificate /etc/letsencrypt/live/balicleaningservice.com/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/balicleaningservice.com/privkey.pem;
+
+    location / {
+        # Arahkan traffic langsung ke container Next.js Klien D
+        proxy_pass http://balicleaningservice-web-1:3000;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}
+
+
+Urutan Eksekusi (Deployment)
+Masuk ke direktori proyek dan bangun kontainernya:
+
+Bash
+cd ~/balicleaningservice
+docker-compose up -d --build
+Berikan komentar (#) sementara pada blok server { listen 443 ssl; ... } milik Klien D di dalam ~/docker-proxy/nginx.conf karena sertifikatnya belum ada.
+
+Restart Nginx global Anda:
+
+Bash
+cd ~/docker-proxy
+docker-compose restart nginx
+Generate sertifikat SSL baru:
+
+Bash
+docker-compose exec certbot certbot certonly --webroot -w /var/www/certbot -d balicleaningservice.com -d www.balicleaningservice.com
+Hapus komentar (#) pada blok 443 tadi, lalu restart Nginx sekali lagi (docker-compose restart nginx).

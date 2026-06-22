@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: balicleaningservice-web-1
+    restart: always
+    networks:
+      - webproxy
+
+networks:
+  webproxy:
+    external: true
