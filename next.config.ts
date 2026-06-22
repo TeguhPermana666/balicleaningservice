@@ -1,20 +1,22 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Tambahkan blok images ini
+  output: "standalone",
+
+  // Konfigurasi images yang sudah Anda buat sebelumnya biarkan saja tetap ada
   images: {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "i.pravatar.cc", // Untuk Avatar Testimoni
+        hostname: "i.pravatar.cc",
       },
       {
         protocol: "https",
-        hostname: "images.unsplash.com", // Untuk Gambar About Us & Why Us
+        hostname: "images.unsplash.com",
       },
       {
         protocol: "https",
-        hostname: "i.ytimg.com", // Untuk Thumbnail YouTube Shorts
+        hostname: "i.ytimg.com",
       }
     ],
   },
