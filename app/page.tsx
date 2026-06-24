@@ -16,7 +16,7 @@ export default function Home() {
     "image": "https://balicleaningservice.com/images/logo.webp", 
     "@id": "https://balicleaningservice.com",
     "url": "https://balicleaningservice.com",
-    "telephone": "6285808463467", 
+    "telephone": "6285726868969", 
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Jl. Raya Canggu", 

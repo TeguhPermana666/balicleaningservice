@@ -43,7 +43,7 @@ export default function Hero() {
           
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-in fade-in slide-in-from-bottom-8 duration-700 delay-300 fill-mode-both">
             <Button size="lg" asChild className="rounded-full text-lg px-8 py-6 shadow-lg shadow-primary/30 hover:shadow-primary/50 transition-all hover:-translate-y-1">
-              <a href="https://wa.me/6285808463467" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/6285726868969" target="_blank" rel="noopener noreferrer">
                 Pesan Sekarang via WA
               </a>
             </Button>

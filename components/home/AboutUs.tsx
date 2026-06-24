@@ -110,7 +110,7 @@ export default function AboutUs() {
                 <p className="text-lg font-bold text-foreground">Konsultasi & Survei Gratis</p>
               </div>
               <a 
-                href="https://wa.me/6285808463467" 
+                href="https://wa.me/6285726868969" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-primary text-primary-foreground px-6 py-3 rounded-full font-bold hover:bg-primary/90 transition-colors shadow-lg shadow-primary/30"

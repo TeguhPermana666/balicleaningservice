@@ -18,13 +18,13 @@ export default function Footer() {
             </h3>
           </div>
           <a 
-            href="https://wa.me/6285808463467" 
+            href="https://wa.me/6285726868969" 
             target="_blank" 
             rel="noopener noreferrer"
             className="bg-white text-primary px-8 py-4 rounded-full font-bold text-lg hover:bg-slate-100 transition-colors shadow-lg flex items-center gap-3 whitespace-nowrap"
           >
             <Phone size={20} className="fill-primary" />
-            0858-0846-3467
+            085726868969
           </a>
         </div>
 
@@ -122,7 +122,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={18} className="text-primary shrink-0" />
-                <p className="text-slate-400 text-sm">0858-0846-3467</p>
+                <p className="text-slate-400 text-sm">085726868969</p>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={18} className="text-primary shrink-0" />

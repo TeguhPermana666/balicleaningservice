@@ -8,21 +8,21 @@ const servicesData = [
     title: "Layanan Cuci Sofa Bali",
     description: "Layanan cuci sofa panggilan di Bali. Ampuh angkat noda membandel, debu, dan tungau. Sofa langsung bersih, kering, dan wangi.",
     icon: <Sofa className="w-8 h-8 text-white" />,
-    image: "/images/before_after2.webp", // Menggunakan gambar yang sudah ada sebagai placeholder
+    image: "/images/before_after1.webp", // Menggunakan gambar yang sudah ada sebagai placeholder
     link: "/blog/jasa-cuci-sofa-bali",   // Arahkan ke file SEO MDX yang sudah kita buat
   },
   {
     title: "Cuci Springbed & Kasur",
     description: "Cuci kasur dan springbed panggilan. Bebaskan tempat tidur Anda dari kutu busuk, bakteri, dan kotoran penyebab gatal alergi.",
     icon: <Bed className="w-8 h-8 text-white" />,
-    image: "/images/before_after1.webp",
+    image: "/images/before_after3.webp",
     link: "/blog/cuci-springbed-kasur-bali",
   },
   {
     title: "Poles Lantai Marmer",
     description: "Jasa poles marmer, granit, dan teraso di Bali. Kembalikan kilau lantai Anda yang kusam menjadi mengkilap seperti baru.",
     icon: <Sparkles className="w-8 h-8 text-white" />,
-    image: "/images/before_after3.webp",
+    image: "/images/marmer.webp",
     link: "/blog/poles-lantai-marmer-bali",
   },
   {
